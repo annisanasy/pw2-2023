@@ -1,0 +1,10 @@
+<?php
+    include_once 'header.php';
+?>				
+    <h1>Welcome Home!</h1>
+		<p>
+			Annisa Nasywa Salsabila - 0110122280 - SI05
+		</p>
+<?php
+    include_once 'footer.php';
+?>
