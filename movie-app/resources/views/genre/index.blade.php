@@ -35,51 +35,17 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                    @foreach ($genre as $genre)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Komedi</td>
-                                            <td>Lucu</td>
+                                            <td>{{ $genre['no'] }}</td>
+                                            <td>{{ $genre['genre'] }}</td>
+                                            <td>{{ $genre['deskripsi'] }}</td>
                                             <td>
                                                 <a href="" class="btn btn-sm btn-warning"> Edit</a>
                                                 <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Romance</td>
-                                            <td>Romantis</td>
-                                            <td>
-                                                <a href="" class="btn btn-sm btn-warning"> Edit</a>
-                                                <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Horor</td>
-                                            <td>Seram</td>
-                                            <td>
-                                                <a href="" class="btn btn-sm btn-warning"> Edit</a>
-                                                <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Action</td>
-                                            <td>Menegangkan</td>
-                                            <td>
-                                                <a href="" class="btn btn-sm btn-warning"> Edit</a>
-                                                <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Thriller</td>
-                                            <td>Seru</td>
-                                            <td>
-                                                <a href="" class="btn btn-sm btn-warning"> Edit</a>
-                                                <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>
-                                            </td>
-                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
