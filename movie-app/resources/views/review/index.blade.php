@@ -24,8 +24,8 @@
                                             <th>Film</th>
                                             <th>User</th>
                                             <th>Rating</th>
-                                            <th>Tanggal</th>
                                             <th>Review</th>
+                                            <th>Tanggal</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -35,20 +35,20 @@
                                             <th>Film</th>
                                             <th>User</th>
                                             <th>Rating</th>
-                                            <th>Tanggal</th>
                                             <th>Review</th>
+                                            <th>Tanggal</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    @foreach ($review as $review)
+                                    @foreach ($reviews as $review)
                                         <tr>
-                                            <td>{{ $review['no'] }}</td>
-                                            <td>{{ $review['film'] }}</td>
-                                            <td>{{ $review['user'] }}</td>
-                                            <td>{{ $review['rating'] }}</td>
-                                            <td>{{ $review['tanggal'] }}</td>
-                                            <td>{{ $review['review'] }}</td>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $review->film }}</td>
+                                            <td>{{ $review->user }}</td>
+                                            <td>{{ $review->rating }}</td>
+                                            <td>{{ $review->review }}</td>
+                                            <td>{{ $review->tanggal }}</td>
                                             <td>
                                                 <a href="" class="btn btn-sm btn-warning"> Edit</a>
                                                 <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus?')"> Delete</a>

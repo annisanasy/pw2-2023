@@ -24,8 +24,16 @@ class GenresSeeder extends Seeder
         ]);
 
         Genre::create([
+            'nama' => 'Romance',
+            'deskripsi' => 'Romantis',
+        ]);
+        Genre::create([
             'nama' => 'Horor',
             'deskripsi' => 'Seram',
+        ]);
+        Genre::create([
+            'nama' => 'Thriller',
+            'deskripsi' => 'Seru',
         ]);
     }
 }
