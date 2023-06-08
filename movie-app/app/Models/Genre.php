@@ -9,6 +9,7 @@ class Genre extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['nama', 'deskripsi'];
     
     public function genre()
     {
