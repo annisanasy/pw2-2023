@@ -54,7 +54,8 @@ class GenreController extends Controller
      */
     public function edit(Genre $genre)
     {
-        //
+        
+        return view('genre.edit', compact('genre'));
     }
 
     /**
@@ -62,7 +63,13 @@ class GenreController extends Controller
      */
     public function update(Request $request, Genre $genre)
     {
-        //
+        $validateData = $request->validate([
+            'nama' => 'required',
+            'deskripsi' => 'required',
+        ]);
+
+        $genre->update($validateData);
+        return redirect('/genre')->with('success', 'Data berhasil diupdate');
     }
 
     /**

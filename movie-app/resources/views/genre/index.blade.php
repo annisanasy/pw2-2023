@@ -46,7 +46,7 @@
                                             <td>{{ $genre->nama }}</td>
                                             <td>{{ $genre->deskripsi }}</td>
                                             <td>
-                                                <a href="" class="btn btn-sm btn-warning"> Edit</a>
+                                                <a href="/genre/{{$genre->id}}/edit" class="btn btn-sm btn-warning"> Edit</a>
                                                     <form action="/genre/{{$genre->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')
